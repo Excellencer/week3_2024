@@ -24,7 +24,7 @@ app.get('/', (req: Request, res: Response) => {
 })
 
 app.get("/hello", function (req: Request, res: Response) {
-    res.json({msg: "Hello world"});
+    res.json({msg: "Hello world!"});
 });
 
 app.get("/echo/:id", function (req: Request, res: Response) {
