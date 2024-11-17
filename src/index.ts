@@ -44,7 +44,7 @@ router.post("/users", jsonParser, function (req: Request, res: Response) {
 });
 
 router.get("/users", function (req: Request, res: Response) {
-    res.status(201).json({users: UserList});
+    res.status(201).json(UserList);
 });
 
 

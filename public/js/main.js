@@ -26,13 +26,8 @@ document.getElementById('getUsers').addEventListener('click', function () {
     fetch('http://localhost:3000/users')
 
         .then((response) => response.json())
-<<<<<<< HEAD
         .then((userList) => {
             
-=======
-        .then((data) => {
-            const userList = data.users;
->>>>>>> 1314abc0df85f902cf4ba0159ca4ff5341b80670
             let userListElement = document.getElementById('userList');
             userListElement.innerHTML = ''; 
 
