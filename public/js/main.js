@@ -24,9 +24,10 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
 
 document.getElementById('getUsers').addEventListener('click', function () {
     fetch('http://localhost:3000/users')
-    
+
         .then((response) => response.json())
         .then((userList) => {
+            
             let userListElement = document.getElementById('userList');
             userListElement.innerHTML = ''; 
 
