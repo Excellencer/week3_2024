@@ -33,6 +33,6 @@ router.post("/users", jsonParser, function (req, res) {
     res.json({ message: "User successfully added" });
 });
 router.get("/users", function (req, res) {
-    res.status(201).json(UserList);
+    res.status(201).json({ users: UserList });
 });
 exports.default = router;
