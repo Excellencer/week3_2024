@@ -30,7 +30,7 @@ router.post("/sum", jsonParser, function (req, res) {
 });
 router.post("/users", jsonParser, function (req, res) {
     UserList.push(req.body);
-    res.json({ msg: "User successfully added" });
+    res.json({ message: "User successfully added" });
 });
 router.get("/users", function (req, res) {
     res.status(201).json(UserList);
